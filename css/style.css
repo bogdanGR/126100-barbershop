@@ -1,0 +1,127 @@
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+.container {
+  width: 940px;
+  margin:0 auto;
+  padding: 0 10px;
+}
+.main-header {
+  margin-bottom: 60px;
+}
+.main-navigation {
+  width: 780px;
+  float: left;
+
+}
+.user-block {
+ width: 140px;
+ float: right;
+}
+.index-logo {
+  width: 368px;
+  height: 204px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px
+}
+.features {
+  margin-bottom: 80px;
+}
+.features-item {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+}
+.features-item:last-child {
+  margin-right: 0;
+}
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+}
+.index-content-left {
+  float: left;
+  width: 380px;
+
+}
+.index-content-right {
+  float: right;
+  width: 300px;
+
+}
+.main-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+}
+.footer-social {
+  float: left;
+  width: 180px;
+}
+.footer-copyright {
+  float: right;
+  width: 180px;
+}
+/*style barbershop-item*/
+.logo-barbershop {
+  width: 140px;
+  float:left;
+}
+ul.main-navigation {
+  float: left;
+  width: 620px;
+}
+.user-block .login {
+  float:right;
+  width: 140px;
+}
+.breadcrumbs {
+  padding-bottom: 60px;
+}
+.product-content-left {
+  float:left;
+  width: 470px;
+}
+.product-content-right {
+  float: right;
+  width: 425px;
+}
+.footer-item {
+  padding-top: 55px;
+}
+/*styles for barbershop: shop(catalog)*/
+.catalog-filter {
+  float: left;
+  width: 200px;
+}
+.catalog-products {
+  float: right;
+  width: 700px;
+  font-size: 0;
+}
+.catalog-product {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom:20px;
+  font-size: 18px;
+}
+.catalog-product:nth-child(3n+3) {
+  margin-right:0;
+}
+.links {
+  font-size: 18px;
+}
+.links li {
+  display: inline-block;
+}
