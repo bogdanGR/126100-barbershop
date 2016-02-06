@@ -2,16 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
     <title>Барбершоп Товары</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
-  <body>
+  <body class="body-inside">
     <header class="main-header">
       <div class="container  clearfix">
         <div class="logo-barbershop">
           <a href="index.html"><img src="img/logo-mini.png" height="24" width="111" alt="logo"></a>
         </div>
-          <ul class="main-navigation">
+          <ul class="main-menu">
             <li>
               <a href="#">Информация</a>
             </li>
@@ -55,15 +57,15 @@
               <img src="img\big-gallery.jpg" height="498" width="460" alt="Товар">
             </figure>
             <div class="images">
-              <a href="#"><img src="img\gallery-1.png"  height="149"  width="140"></a>
-              <a href="#"><img src="img\gallery-3.jpg"  height="149"  width="140"></a>
-              <a href="#"><img src="img\gallery-2.jpg"  height="149"  width="140"></a>
+              <a class="img-1"href="#"><img src="img\gallery-1.png"  height="149"  width="140"></a>
+              <a class="img-2" href="#"><img src="img\gallery-3.jpg"  height="149"  width="140"></a>
+              <a class="img-3" href="#"><img src="img\gallery-2.jpg"  height="149"  width="140"></a>
             </div>
           </div>
            <div class="product-content-right">
             <div class="product-information">
                <b class="available left">Есть в наличии</b>
-               <b>Артикул: Dexter-Ae</b>
+               <b class="article">Артикул: Dexter-Ae</b>
             </div>
               <p>
                 Travel Kit – необходимый аксессуар во время любого
@@ -73,8 +75,8 @@
                  для бритья, крем после бритья, шампунь. Набор также может
                  стать отличным подарком
               </p>
-            <div class=product-order>
-              <p class="price">2 900 рублей</p>
+            <div class="product-order">
+              <span class="price">2 900 рублей</span>
               <a class="btn">Купить</a>
             </div>
             <h2>В набор входят:</h2>
@@ -88,7 +90,7 @@
           </div>
         </div>
     </main>
-    <footer class="footer-item">
+    <footer class="footer-inside">
       <div class="container">
         <section class="footer-contacts">
           Барбершоп «Бородинский»<br>
