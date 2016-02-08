@@ -371,9 +371,9 @@
 
   background: #000000;
 
-  /*transition:
+  transition:
     background-position 0.5s,
-    background-color 0.5s;*/
+    background-color 0.5s;
 }
 .social-btn::before {
   content: "";
@@ -446,7 +446,31 @@
   background: #ffffff url("../img/content-bg.png");
 }
 
+.main-menu .active {
+  position: relative;
 
+  background-color: none;
+}
+
+.main-menu .active a:hover {
+  background: none;
+}
+
+.main-menu .active::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+
+  height: 5px;
+
+  background-color: #ffffff;
+}
+.main-menu .active span {
+  display: block;
+  padding: 25px 20px;
+}
 .logo-barbershop {
   margin-right: 40px;
   margin-top:22px;
@@ -499,6 +523,18 @@
   color: #000000;
   text-decoration: none;
 }
+.breadcrumbs-gray {
+  color: #c1bebc;
+}
+.breadcrumbs-gray::after {
+  display: none;
+}
+.breadcrumbs .current::after {
+  display: none;
+}
+.breadcrumbs .current {
+  color:  #c1bebc;;
+}
 .breadcrumbs {
   margin: 0;
   padding: 0;
@@ -507,22 +543,30 @@
   margin-bottom: 55px;
 }
 .breadcrumbs li {
-  padding-right: 40px;
-  display: inline-block;
   vertical-align: top;
   font-size: 14px;
   line-height: 24px;
+  position: relative;
+  display: inline;
+  padding-right: 40px;
+}
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 18px;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  background-color: #000000;
 }
 .article {
   float: right;
+  color: #c0c0bf;
 }
 .product-content-left {
   float:left;
   width: 470px;
-}
-.product-order {
-
-  font-size: 0;
 }
 .price {
   background-color: #e5e5e5;
@@ -548,6 +592,12 @@
   margin: 0;
   margin-bottom: 20px;
 }
+.big-img img {
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+.images img {
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
 .img-1 {
   float:left;
   width: 140px;
@@ -562,6 +612,52 @@
 .product-content-right {
   float: right;
   width: 425px;
+}
+.product-content-right p {
+  padding-bottom: 10px;
+}
+.list {
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+.list li {
+  position: relative;
+  margin-bottom: 10px;
+  display: inline;
+  padding-right: 40px;
+}
+.list   li::before {
+  ccontent: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+.list-item {
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-item li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.list-item li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
 }
 .footer-inside{
   padding-top: 60px;
@@ -617,31 +713,35 @@ input[type="radio"] + label {
   display: block;
   margin: 10px 0;
   line-height: 20px;
-  padding-left: 40px;
+  padding-left: 30px;
   position: relative;
   cursor: pointer;
+}
+input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  z-index: 10;
 }
 input[type="radio"] + label::before {
   content: "";
   display: block;
   width: 16px;
   height: 16px;
-  border-radius: 8px;
+  border-radius: 50%;
   border: 2px solid #000000;
   background-color: #f9f6f3;
   position: absolute;
   top: 0;
   left:0;
 }
-input[type="radio"]:checked + label::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  border-radius: 1px;
-  background-color: #000000;
-  background-repeat: no-repeat;
-}
+
 /* the end Radio input*/
 
 
@@ -668,23 +768,30 @@ input[type="radio"]:checked + label::after {
 .catalog-product img {
   background-color: #f7f7f7;
 }
-.product-order {
-  font-size: 0;
-  margin-top:15px;
-  padding-left: 15px;
-  padding-bottom: 15px;
-}
-.catalog-product-description a {
-  padding-left: 15px;
+.catalog-products a {
+  font-size: 14px
+  line-height: 18px;
 }
 
+.product-order {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
 .catalog-product:nth-child(3n+3) {
   margin-right:0;
+}
+.catalog-product-description {
+  padding: 10px;
 }
 .links {
   margin-top: 55px;
   float:left;
   font-size: 0px;
+}
+.links ul {
+  padding: 0;
 }
 .links li {
   display: inline-block;
@@ -698,7 +805,7 @@ input[type="radio"]:checked + label::after {
   margin-right: 2px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 43px;
   vertical-align: top;
   text-align: center;
   color: #ffffff;
