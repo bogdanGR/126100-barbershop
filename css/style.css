@@ -13,6 +13,210 @@
   display: table;
   clear: both;
 }
+.main-navigation .logo-inner {
+  float: left;
+  width: 111px;
+  height: 20px;
+  padding-top: 22px;
+}
+.main-navigation .logo-inner img{
+  width: 111px;
+  height: 24px;
+}
+.main-navigation .logo-inner:hover {
+  background: none;
+}
+.main-navigation .active {
+  position: relative;
+
+  background-color: none;
+}
+.main-navigation .active::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+
+  height: 5px;
+
+  background-color: #ffffff;
+}
+.inner-page {
+  color: #000000;
+
+  background: #f8f3f0 url("img/pattern-white.jpg") repeat;
+}
+.main-header {
+  margin-bottom: 60px;
+
+  background-color: #000000;
+}
+.inner-page .main-header {
+  margin-bottom: 55px;
+}
+.inner-page-title {
+  margin-bottom: 55px;
+}
+
+.inner-page-title h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.breadcrumbs li {
+  position: relative;
+  display: inline;
+  padding-right: 40px;
+}
+.breadcrumbs a {
+  color: #000000;
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.breadcrumbs .current {
+  color: #aba9a7;
+}
+.inner-content {
+  margin-bottom: 75px;
+}
+.inner-content h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+.inner-content p {
+  margin: 14px 0;
+}
+.inner-content h2 + h3 {
+    margin-top: 30px;
+}
+.inner-content table {
+  border-collapse: collapse;
+}
+.inner-content td {
+  padding: 10px 15px;
+
+  border: 2px solid #000000;
+}
+.big-heading {
+  margin-top: 55px;
+  margin-bottom: 65px;
+
+  text-align: center;
+}
+
+.big-heading h2 {
+  position: relative;
+  z-index: 2;
+
+  display: inline;
+  margin: 0;
+  padding: 0 25px;
+
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+
+  /*background: #f8f3f0 url("../img/pattern-white.sjpg") repeat;*/
+}
+
+.big-heading::after {
+  content: "";
+  position: relative;
+  top: -25px;
+  z-index: 1;
+
+  display: block;
+
+  border-bottom: 2px solid #000000;
+}
+.custom-list-1 {
+  margin: 14px 0;
+  padding: 0;
+
+  list-style: none;
+}
+.custom-list-1 li {
+  position: relative;
+
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+.custom-list-1 li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+.prices-table {
+  width: 100%;
+}
+.prices-table td {
+  width: 50%;
+}
+.prices-table td:last-child {
+  text-align: center;
+}
+.inner-columns {
+  margin: 60px 0;
+}
+.inner-column-left,
+.inner-column-right {
+  width: 460px;
+}
+.inner-column-left {
+  float: left;
+}
+
+.inner-column-right {
+  float: right;
+}
+.inner-columns {
+  margin: 60px 0;
+}
+
+.inner-column-left,
+.inner-column-right {
+  width: 460px;
+}
+.short-text {
+  padding-right: 80px;
+}
+.inner-column-left *:first-child,
+.inner-column-right *:first-child {
+  margin-top: 0;
+}
+.inner-column-left *:last-child,
+.inner-column-right *:last-child {
+  margin-bottom: 0;
+}
+.main-navigation .active span {
+  display: block;
+  padding: 25px 20px;
+}
+.main-navigation .active a:hover {
+  background: none;
+}
 .container {
   width: 940px;
   margin: 0 auto;
