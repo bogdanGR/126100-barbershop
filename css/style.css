@@ -1,5 +1,6 @@
 .index-body {
   min-width: 960px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
@@ -37,15 +38,18 @@
   right: 20px;
   bottom: 0;
   left: 20px;
-
   height: 5px;
-
   background-color: #ffffff;
 }
-.inner-page {
-  color: #000000;
+.inner-body {
+  min-width: 960px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  text-transform: uppercase;
 
-  background: #f8f3f0 url("img/pattern-white.jpg") repeat;
+  background: #f8f3f0 url("../img/content-bg.png") repeat;
 }
 .main-header {
   margin-bottom: 60px;
@@ -131,7 +135,7 @@
   line-height: 48px;
   text-align: center;
 
-  /*background: #f8f3f0 url("../img/pattern-white.sjpg") repeat;*/
+  background: #f8f3f0 url("../img/content-bg.png") repeat;
 }
 
 .big-heading::after {
