@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>Каталог</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style-min.css">
+  <link rel="stylesheet" href="css/normalize-min.css">
 </head>
 
 <body class="body-inside">
@@ -52,23 +52,23 @@
     <div class="catalog clearfix">
       <aside class="catalog-filter">
         <form action="#" method="post">
-          <p>Производители:</p>
-          <input type="checkbox" id="check1" name="Baxter of California">
+          <h2>Производители:</h2>
+          <input type="checkbox" id="check1" name="Baxter of California" checked="checked">
           <label for="check1">Baxter of California</label>
-          <input type="checkbox" id="check2" name="Mr-Natty">
+          <input type="checkbox" id="check2" name="Mr-Natty" disabled="disabled">
           <label for="check2">Mr Natty</label>
-          <input type="checkbox" id="check3" name="Suavesito">
+          <input type="checkbox" id="check3" name="Suavesito" checked="checked">
           <label for="check3">Suavesito</label>
           <input type="checkbox" id="check4" name="Malin">
           <label for="check4">Malin</label>
           <input type="checkbox" id="check5" name="Murrays">
           <label for="check5">Murrays</label>
-          <input type="checkbox" id="check6" name="American-crew">
+          <input type="checkbox" id="check6" name="American-crew" checked="checked">
           <label for="check6">American crew</label>
-          <p class="group-products">Группы товаров:</p>
+          <h2 class="group-products">Группы товаров:</h2>
           <input type="radio" id="radio1" name="Shaving">
           <label for="radio1">Бритвенные принадлежности</label>
-          <input type="radio" id="radio2" name="Means for care">
+          <input type="radio" id="radio2" name="Means for care" disabled="disabled">
           <label for="radio2">Средства для ухода</label>
           <input type="radio" id="radio3" name="accessories">
            <label for="radio3">Аксессуары</label>
@@ -77,7 +77,7 @@
         </aside>
         <div class="catalog-products">
           <article class="catalog-product">
-            <a href="#"><img src="img/content-baxter-of-california.jpg" height="165" width="220"></a>
+            <a href="#"><img src="img/content-baxter-of-california.jpg" height="165" width="220" alt="baxter of california"></a>
             <div class="catalog-product-description">
               <a href="#">Набор для путешествий<br>«Baxter of California»</a>
               <div class="product-order">
@@ -87,7 +87,7 @@
             </div>
           </article>
           <article class="catalog-product">
-            <a href="#"><img src="img\content-baxter-of-california-2.jpg" height="165" width="220"></a>
+            <a href="#"><img src="img/content-baxter-of-california-2.jpg" height="165" width="220" alt="baxter of california"></a>
             <div class="catalog-product-description">
               <a href="#">Увлажняющий кондиционер<br> «Baxter of California»</a>
               <div class="product-order">
@@ -97,7 +97,7 @@
             </div>
           </article>
           <article class="catalog-product">
-            <a href="#"><img src="img\content-suavecito.jpg" height="165" width="220"></a>
+            <a href="#"><img src="img/content-suavecito.jpg" height="165" width="220" alt="suavecito"></a>
             <div class="catalog-product-description">
               <a href="#">Гель для волос<br>«Suavecito»</a>
               <div class="product-order">
@@ -107,7 +107,7 @@
             </div>
           </article>
           <article class="catalog-product">
-            <a href="#"><img src="img\content-american-crew.jpg" height="165" width="220"></a>
+            <a href="#"><img src="img/content-american-crew.jpg" height="165" width="220" alt="american crew"></a>
             <div class="catalog-product-description">
               <a href="#">Глина для укладки волос:<br> «American crew»</a>
               <div class="product-order">
@@ -117,7 +117,7 @@
             </div>
           </article>
           <article class="catalog-product">
-            <a href="#"><img src="img\content-american-crew-gel.jpg" height="165" width="220"></a>
+            <a href="#"><img src="img/content-american-crew-gel.jpg" height="165" width="220" alt="american crew"></a>
             <div class="catalog-product-description">
               <a href="#">Гель для волос<br>«American crew»</a>
               <div class="product-order">
@@ -127,7 +127,7 @@
             </div>
           </article>
           <article class="catalog-product">
-            <a href="#"><img src="img\content-baxter-of-california-3.jpg" height="165" width="220"></a>
+            <a href="#"><img src="img/content-baxter-of-california-3.jpg" height="165" width="220"  alt="baxter of california"></a>
             <div class="catalog-product-description">
               <a href="#">Набор для бритья<br>«Baxter of California»</a>
               <div class="product-order">
@@ -139,7 +139,7 @@
           <div class="links">
             <ul>
               <li><a class="link" href="#">1</a></li>
-              <li><a class="link" href="#">2</a></li>
+              <li><a class="link active" href="#">2</a></li>
               <li><a class="link" href="#">3</a></li>
               <li><a class="link" href="#">4</a></li>
             </ul>
