@@ -672,6 +672,7 @@
 .links .active:hover{
   color: #000000;
   background: #ffffff;
+  cursor: context-menu;
 }
 .price {
   background-color: #e5e5e5;
@@ -702,6 +703,12 @@
 }
 .images img {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.big-img img:hover {
+  box-shadow: 0 0 50px rgba(0,0,0,.5);
+}
+.images img:hover{
+  box-shadow: 0 0 50px rgba(0,0,0,.5);
 }
 .img-1 {
   float: left;
@@ -785,9 +792,33 @@
 }
 input[type="checkbox"]:disabled + label {
   opacity: 0.5;
+  cursor: context-menu;
+}
+input[type="checkbox"]:disabled + label:hover {
+  opacity: 0.5;
+
+}
+input[type="radio"]:disabled + label:hover {
+  opacity: 0.5;
+  cursor: context-menu;
+  color: #adaba9
 }
 input[type="radio"]:disabled + label {
   opacity: 0.5;
+  cursor: context-menu;
+  color: #adaba9;
+  border-color: #adaba9;
+}
+input[type="checkbox"]:disabled + label:hover {
+  opacity: 0.5;
+  cursor: context-menu;
+  color: #adaba9
+}
+input[type="checkbox"]:disabled + label {
+  opacity: 0.5;
+  cursor: context-menu;
+  color: #adaba9;
+  border-color: #adaba9;
 }
 input[type="checkbox"] {
   display: none;
@@ -802,6 +833,9 @@ input[type="checkbox"] + label {
   line-height: 24px;
 }
 input[type="checkbox"] + label:hover {
+  color: #663d15;
+}
+input[type="radio"] + label:hover {
   color: #663d15;
 }
 input[type="checkbox"] + label::before {
